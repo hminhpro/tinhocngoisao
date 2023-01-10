@@ -7,22 +7,29 @@
 	<style type="text/css">
 		#div_tong{
 			width: 1250px;
-			height: 1780px;
+			height: 1822px;
 			margin: auto;
-			background-color: red;
+			background-color: ;
 		}
 
+
+		/*div_tong > .banner*/
+		#div_tong > .banner{
+			width: 1250px;
+			height: 42px;
+			background-color:;
+		}
 		
 		/*div_tong >.tren*/
 		#div_tong > .tren{
 			width: 1250px;
 			height: 80px;
-			background-color: olive;
+			background-color: ;
 		}
 		#div_tong > .tren > .trai{
 			width: 250px;
 			height: 80px;
-			background-color: aqua;
+			background-color: ;
 			float: left;
 			text-align: center;
 		}
@@ -31,13 +38,39 @@
 			height: 80px;
 			text-align: center;
 			float: left;
-			background-color: pink;
+			background-color: ;
 		}
-		#div_tong > .tren > .phai{
-			width: 350px;
+		#div_tong > .tren > .giua_1{
+			width: 200px;
 			height: 80px;
 			float: left;
-			background-color: brown;
+			background-color: ;
+		}
+		#div_tong > .tren > .giua_1 > a > table{
+			display: none;
+			background: white; 
+			border-radius: 5px; 
+			width: 200px; 
+			height: 124px;
+		}
+		#div_tong > .tren > .giua_1 > a:hover table{
+			display: block;
+			right: -30px;
+			top: 30px;
+		}
+		#div_tong > .tren > .phai{
+			width: 150px;
+			height: 80px;
+			float: left;
+			background-color: ;
+		}
+		#div_tong > .tren > .phai > a{
+			text-decoration: none;
+			color: grey;
+		}
+		#div_tong > .tren > .phai > a:hover{
+			font-weight: bold;
+			font-size: 16px;
 		}
 
 		
@@ -45,11 +78,13 @@
 		#div_tong > .tren_1{
 			width: 1250px;
 			height: 30px;
-			background-color: purple;
 		}
-		#div_tong > .tren_1 > .trai{
-			width: 250px;
-
+		#div_tong > .tren_1 > table > tr,td > a{
+			color: white;
+			text-decoration: none;
+		}
+		#div_tong > .tren_1 > table > tr,td > a:hover{
+			font-weight: bold;
 		}
 
 		
@@ -65,6 +100,24 @@
 			background-color: black;
 
 		}
+		#div_tong > .duoi > .tren_2 > .trai{
+			width: 250px;
+			background-color: purple;
+			height: 415px;
+		}
+		#div_tong > .duoi > .tren_2 > .giua{
+			width: 660px;
+			height: 415px;
+			float: left;
+			background-color: red;
+		}
+		#div_tong > .duoi > .tren_2 > .phai{
+			background-color: pink;
+			width: 340px;
+			height: 415px;
+			
+		}
+
 
 		
 		/*#div_tong > .duoi > duoi_2*/
@@ -74,39 +127,132 @@
 			background-color: palegoldenrod;
 		}
 
+		.nen_dang_nhap{
+			background-color: yellow;
+			border-radius: 6px;
+		}
+
 	</style>
 </head>
 <body>
 	<div id="div_tong">
 		<a href="#">
-			<img src="file:///C:/Users/admin/OneDrive/Desktop/LapTrinhWeb/Bu%E1%BB%95i%207/ic-fb.png" style="position: fixed; width: 35px; top: 480px; right: 10px; z-index: 99;">
-			<img src="C:\Users\admin\OneDrive\Desktop\LapTrinhWeb\Buổi 7\icon-tiktok.png" style="position: fixed; width: 35px; top: 440px; right: 10px; z-index: 99;">
-			<img src="C:\Users\admin\OneDrive\Desktop\LapTrinhWeb\Buổi 7\icon-shopee.png" style="position: fixed; width: 35px; top: 400px; right: 10px; z-index: 99;">
-			<img src="C:\Users\admin\OneDrive\Desktop\LapTrinhWeb\Buổi 7\pngwing.com.png" style="position: fixed; width: 35px; top: 360px; right: 10px; z-index: 99;">
-			<img src="C:\Users\admin\OneDrive\Desktop\LapTrinhWeb\Buổi 7\youtube-logo-icon-transparent---32.png" style="position: fixed; width: 45px; top: 320px; right: 5px; z-index: 99;">
-			<img src="C:/Users/admin/OneDrive/Desktop/LapTrinhWeb/Buổi 7/icons8-facebook-messenger-48.png" style="position: fixed; width: 55px; top: 560px; right: -1px; z-index: 99;">
+			<img src="/ic-fb.png" style="position: fixed; width: 35px; top: 480px; right: 10px; z-index: 99;">
+			<img src="/icon-tiktok.png" style="position: fixed; width: 35px; top: 440px; right: 10px; z-index: 99;">
+			<img src="/icon-shopee.png" style="position: fixed; width: 35px; top: 400px; right: 10px; z-index: 99;">
+			<img src="/pngwing.com.png" style="position: fixed; width: 35px; top: 360px; right: 10px; z-index: 99;">
+			<img src="/youtube-logo-icon-transparent---32.png" style="position: fixed; width: 45px; top: 320px; right: 5px; z-index: 99;">
+			<img src="/icons8-facebook-messenger-48.png" style="position: fixed; width: 55px; top: 560px; right: -1px; z-index: 99;">
 		</a>
+		<div class="banner">
+			<a href="https://tinhocngoisao.com/" target="blank">
+				<img src="/head_web-01_63c4830e65d34c0db7b875066850ed7b_master.png" style="width: 1250px; height: 42px;">
+			</a>
+		</div>
 		<div class="tren">
 			<div class="trai">
 				<a href="https://tinhocngoisao.com/">
-						<img src="C:/Users/admin/OneDrive/Desktop/LapTrinhWeb/Buổi 7/logo.png" style="width: 40%; text-align: center;">
+						<img src="/logo.png" style="width: 40%; text-align: center;">
 				</a>
 			</div>
 			<div class="giua" style="position: relative;">
-				<form style="width: 100%; height: 80px; position: absolute; top: 70px;">
-					<input type="text" placeholder="Bạn tìm gì vậy..." name="">
+				<form style="width: 100%; height: 80px; position: absolute; top: 17px;">
+					<input type="text" placeholder="Bạn tìm gì..." style="background: lightgrey; width: 70%; height: 40%; border-style: none; border-radius: 5px; font-size: 12px;">
+					<button type="submit" style="background: red; width: 20%; height: 40%; border-radius: 10px; font-size: 12px; color: white; border-style: none;">
+						Tìm kiếm
+					</button>
 				</form>
 			</div>
-			<div class="phai">
-				
+			<div class="giua_1" style="position: relative;">
+				<a href="#" style="position: absolute; font-family: arial;text-decoration: none; color: gray; top: 20px; font-size: 13px; left: 55px;">
+					<img src="/16-168603_user-icon-png.png" style="width: 23px; position: absolute; vertical-align: middle; left: -30px; top: 2px;">
+					Đăng nhập/Đăng ký
+					<br>
+					<b style="left: 70px;"> Tài khoản </b>
+					<table style="position: absolute; z-index: 99" cellspacing="8" cellpadding="12">
+						<tr>
+							<td align="center" class="nen_dang_nhap" width="180px">
+								<a href="https://tinhocngoisao.com/account/login" style="text-decoration: none; color: black; font-size: 14px; background: yellow;" target="_self"> Đăng nhập </a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="nen_dang_nhap" width="180px">
+								<a href="https://tinhocngoisao.com/account/login" style="text-decoration: none; color: black; font-size: 14px; background: yellow;" target="_self"> Tạo tài khoàn </a>
+							</td>
+						</tr>
+					</table>
+				</a>
+			</div>
+			<div class="phai" style="position: relative;">
+				<a href="https://tinhocngoisao.com/cart" target="_self" style="top: 30px; position: absolute; left: 40px;"> 
+					<img src="/gio_hang.png" style="vertical-align: middle; width: 30%;">
+					Giỏ hàng
+				</a>
 			</div>
 		</div>
 		<div class="tren_1">
-			<div class="trai"></div>
+			<table>
+				<tbody>
+					<tr height="100%">
+						<td width="250px" height="30px" style="color: white; background-color: rgb(54, 54, 54); font-family: arial; text-align: center; border-radius: 5px;">
+							DANH MỤC SẢN PHẨM	
+						</td>
+						<td width="1000px" style="background-color: rgb(160, 160, 160); border-radius: 5px;">
+							<table style="font-family: arial; font-size: 14px; color: white;">
+								<tr>
+									<td width="200px">
+										<a href="https://icafe.tinhocngoisao.com/" target="_self">
+											<img src="/lap_dat_phong_net.png" width="11%" style="vertical-align: middle;">
+											Lắp đặt phòng net
+										</a>
+									</td>
+									<td width="200px" style="text-align: center;">
+										<a href="https://tinhocngoisao.com/pages/tra-gop" target="_self">
+											<img src="/tra_gop.png" width="11%" style="vertical-align: middle;">
+												Trả góp
+										</a>
+									</td>
+									<td width="200px" style="text-align: center;">
+										<a href="https://tinhocngoisao.com/pages/bang-gia-ban" target="_self">
+											<img src="/bang_gia.png" width="11%" style="vertical-align: middle;">
+												Bảng giá
+										</a>
+									</td>
+									<td width="200px" style="text-align: center;">
+										<a href="https://tinhocngoisao.com/pages/xay-dung-cau-hinh" target="_self">
+											<img src="/xay_dung_cau_hinh.png" width="11%" style="vertical-align: middle;">
+												Xây dựng cấu hình
+										</a>
+									</td>
+									<td width="200px" style="text-align: center;">
+										<a href="https://tinhocngoisao.com/pages/dang-ky-bao-hanh" target="_self">
+											<img src="/kiem_tra_bao_hanh.png" width="11%" style="vertical-align: middle;">
+												Kiểm tra bảo hành
+									</td>
+									<td width="200px" style="text-align: center;">
+										<a href="https://traucay.vn/" target="_self">
+											<img src="/thiet_bi_mining.png" width="11%" style="vertical-align: middle;">
+												Thiết bị mining
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 		<div class="duoi">
 			<div class="tren_2">
-				
+				<div class="trai">
+					
+				</div>
+				<div class="giua">
+					
+				</div>
+				<div class="phai">
+					
+				</div>
 			</div>
 			<div class="duoi_2">
 				
